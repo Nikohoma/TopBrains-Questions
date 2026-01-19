@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Swapping
 {
+    /// <summary>
+    /// Swapping Class having two methods of swapping
+    /// </summary>
     public class Swapping
     {
         /// <summary>
@@ -15,13 +18,13 @@ namespace Swapping
         {
             Console.WriteLine("\n Swapping with Ref : ");
             Console.WriteLine($"\nBefore Swap: x = {a} , y = {b}");
-            (a, b) = (b, a);
+            (a, b) = (b, a); // Tuple Swap
             Console.WriteLine($"\nAfter Swap: x = {a} , y = {b}");
             
         }
 
         /// <summary>
-        /// Method to swap by out method
+        /// Method to swap by out method (Cannot swap without storing into a temp variable)
         /// </summary>
         /// <param name="a"></param>
         /// <param name="b"></param>
